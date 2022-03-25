@@ -1,0 +1,10 @@
+:root {
+  --ocean: #3f87a6;
+  --light: #ebf8e1;
+  --orange: #f69d3c;
+}
+
+main {
+  position: relative;
+  margin-top: -20px;
+}
