@@ -29,14 +29,114 @@ h4,
 h5, 
 h6 {
   margin-bottom: 0.625rem;
-  color: var(--orange);
+  color: var(--light);
   font-weight: 700;
   line-height: 1.1;
 }
-main {
-  position: relative;
-  margin-top: -20px;
+
+h1 {
+  font-size: 4rem;
 }
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  width: 96%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+header h1.title {
+  padding: 1rem, 1.2rem;
+  font-size: 4.5rem;
+}
+
+main {
+  width: 96%;
+  margin: 2rem auto;
+}
+
+footer {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+.blank {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
+  color: var(--orange);
+  
+  outline: 3px dashed var(--lavender);
+  outline-offset: -2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.blank .titles{
+  position: relative;
+  margin: -4rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--ocean);
+  color: var(--light);
+  border: 3px dashed var(--lavender);
+  border-radius: 7px;
+  transition: all 0.5s ease-in-out;
+}
+
+.blank:hover,
+.blank:hover .titles {
+  box-shadow: inset 0px 0px 8px var(--orange), 0 0 15px var(--orange);
+}
+
+
 
 @media screen and (min-width: 992px){
   header {
