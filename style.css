@@ -23,7 +23,7 @@ body {
   Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 1.75rem;
   line-height: 1.5;
-  color: var(--ocean);
+  color: var(--lavender);
   background-color: var(--light);
 }
 
@@ -78,7 +78,7 @@ header {
 
 header h1.title {
   padding: 1rem, 1.2rem;
-  font-size: 4.5rem;
+  font-size: 8.5rem;
 }
 
 main {
