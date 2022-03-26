@@ -3,7 +3,7 @@
     <head>
         <title>CSS Tricks!</title>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="./style.css" />
     </head>
 </html>
@@ -16,20 +16,18 @@
 </body>
 
 <main> 
-    <section class="row">
+    <section class="row justify-center">
         <div class="column">
             <figure class="blank">
                 <h2 class="titles">Flexbox Row</h2>
                     <div class="words">
                         <p>Use these 3 properties to create a Flexbox row layout.</p>
                     </div>
-                    <pre class="code-snip"><code>
-                        .row {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap; 
-                        }
-                    </code></pre>
+                    <pre class="code-snip"><code>.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    }</code></pre>
             </figure>
         </div> 
 
@@ -40,12 +38,10 @@
                     <div class="words">
                         <p>Use this to create a Flexbox column layout.</p>
                     </div>
-                    <pre class="code-snip"><code>
-                        .column {
-                        display: flex;
-                        flex-direction: column;
-                        }
-                        </code></pre>
+                    <pre class="code-snip"><code>.column {
+    display: flex;
+    flex-direction: column;
+    }</code></pre>
             </figure>
         </div>
 
@@ -55,13 +51,12 @@
                     <div class="words">
                         <p>Build a 12-column layout used CSS grid.</p>
                     </div>
-                    <pre class="code-snip"><code>
-                        .grid {
-                        display: grid;
-                        width: 100%;
-                         grid-template-columns: repeat(12, 1fr);
-                        }
-                    </code></pre>
+                    <pre class="code-snip"><code>.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 
+    repeat(12, 1fr);
+    }</code></pre>
             </figure>
         </div>
 
@@ -71,13 +66,13 @@
                     <div class="words">
                         <p>This will create a background linear gradient from top to bottom.</p>
                     </div>
-                    <pre class="code-snip"><code>
-                        .linear-gradient background {
-                        background-image: linear-gradient(
-                        0%
-                        100%
-                        }
-                    </code></pre>
+                    <pre class="code-snip"><code>.linear-gradient background {
+    background-image: linear-   
+    gradient(
+    rgba(25, 33, 102, 0.6) 0%,
+    rgba(177, 79, 22) 100%
+    );
+    }</code></pre>
             </figure>
         </div>
 
@@ -87,17 +82,17 @@
                     <div class="words">
                         <p>Use transition and box shadows to glow on hover.</p>
                     </div>
-                    <pre class="code-snip"><code>
-                        .code-card .card-header {
-                        border-radius: 8px;
-                        transition: all 0.5s ease-in-out;
-                        }
+                    <pre class="code-snip"><code>.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-
+    out;
+    }
 
-                        .code-card:hover,
-                        .code-card:hover .card-header {
-                        box-shadow: inset 0px 0px 8px;
-                        }
-                    </code></pre>
+    .code-card:hover,
+    .code-card:hover .card-header 
+    {
+    box-shadow: inset 0px 0px 8px;
+    }</code></pre>
             </figure>
         </div>
 
@@ -107,12 +102,10 @@
                     <div class="words">
                         <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
                     </div>
-                    <pre class="code-snip"><code>
-                        .card-header {
-                        position: relative;
-                        margin-top: -20px;
-                        }
-                    </code></pre>
+                    <pre class="code-snip"><code>.card-header {
+    position: relative;
+    margin-top: -20px;
+    }</code></pre>
             </figure>
         </div>
     </section>
