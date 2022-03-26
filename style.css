@@ -2,9 +2,49 @@
   --ocean: #3f87a6;
   --light: #ebf8e1;
   --orange: #f69d3c;
+  --lavender: #9198e5;
 }
 
+::selection {
+  background-color: var(--lavender);
+  color: var(--light)
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: var(--light);
+  background-color: var(--ocean);
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  margin-bottom: 0.625rem;
+  color: var(--orange);
+  font-weight: 700;
+  line-height: 1.1;
+}
 main {
   position: relative;
   margin-top: -20px;
+}
+
+@media screen and (min-width: 992px){
+  header {
+    width: 75%
+  }
+  
+  .column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
 }
